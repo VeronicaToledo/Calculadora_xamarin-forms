@@ -1,0 +1,15 @@
+C:\Users\pc784\Desktop\Calculadora01\Calculadora01\bin\Debug\netstandard2.0\Calculadora01.deps.json
+C:\Users\pc784\Desktop\Calculadora01\Calculadora01\bin\Debug\netstandard2.0\Calculadora01.dll
+C:\Users\pc784\Desktop\Calculadora01\Calculadora01\bin\Debug\netstandard2.0\ref\Calculadora01.dll
+C:\Users\pc784\Desktop\Calculadora01\Calculadora01\bin\Debug\netstandard2.0\Calculadora01.pdb
+C:\Users\pc784\Desktop\Calculadora01\Calculadora01\obj\Debug\netstandard2.0\Calculadora01.csproj.AssemblyReference.cache
+C:\Users\pc784\Desktop\Calculadora01\Calculadora01\obj\Debug\netstandard2.0\Calculadora01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc784\Desktop\Calculadora01\Calculadora01\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\pc784\Desktop\Calculadora01\Calculadora01\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\pc784\Desktop\Calculadora01\Calculadora01\obj\Debug\netstandard2.0\Calculadora01.AssemblyInfoInputs.cache
+C:\Users\pc784\Desktop\Calculadora01\Calculadora01\obj\Debug\netstandard2.0\Calculadora01.AssemblyInfo.cs
+C:\Users\pc784\Desktop\Calculadora01\Calculadora01\obj\Debug\netstandard2.0\Calculadora01.csproj.CoreCompileInputs.cache
+C:\Users\pc784\Desktop\Calculadora01\Calculadora01\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\pc784\Desktop\Calculadora01\Calculadora01\obj\Debug\netstandard2.0\Calculadora01.dll
+C:\Users\pc784\Desktop\Calculadora01\Calculadora01\obj\Debug\netstandard2.0\refint\Calculadora01.dll
+C:\Users\pc784\Desktop\Calculadora01\Calculadora01\obj\Debug\netstandard2.0\Calculadora01.pdb

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora01.MainPage"
+             BackgroundColor="#F3F3F4">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="operationText" FontSize="24" FontAttributes="Italic" Text=""
+               TextColor="#09969E" HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+               LineBreakMode="NoWrap" Grid.ColumnSpan="4" Grid.Row="0" />
+        <Label x:Name="resultText" FontSize="48" FontAttributes="Bold" Text="0"
+               TextColor="#09969E" HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+               LineBreakMode="NoWrap" Grid.ColumnSpan="4" Grid.Row="1" />
+
+        <!-- Fila 2: 7, 8, 9, CE -->
+        <Button Text="7" Grid.Row="2" Grid.Column="0"
+                BackgroundColor="#7CD7DA" TextColor="#fff"
+                FontSize="36" CornerRadius="10" Clicked="OnSelectNumber" />
+        <Button Text="8" Grid.Row="2" Grid.Column="1"
+                BackgroundColor="#7CD7DA" TextColor="#fff"
+                FontSize="36" CornerRadius="10" Clicked="OnSelectNumber" />
+        <Button Text="9" Grid.Row="2" Grid.Column="2"
+                BackgroundColor="#7CD7DA" TextColor="#fff"
+                FontSize="36" CornerRadius="10" Clicked="OnSelectNumber" />
+        <Button Text="&#9003;" Grid.Row="2" Grid.Column="3"
+                BackgroundColor="#2E5572" TextColor="#fff"
+                FontSize="36" CornerRadius="10" Clicked="OnDeleteLastCharacter" />
+        <Button Text="CE" Grid.Row="2" Grid.Column="4"
+                BackgroundColor="#2E5572" TextColor="#fff"
+                FontSize="36" CornerRadius="10" Clicked="OnClearEntry" />
+
+        <!-- Fila 3: 4, 5, 6, (, ) -->
+        <Button Text="4" Grid.Row="3" Grid.Column="0"
+                BackgroundColor="#7CD7DA" TextColor="#fff"
+                FontSize="36" CornerRadius="10" Clicked="OnSelectNumber" />
+        <Button Text="5" Grid.Row="3" Grid.Column="1"
+                BackgroundColor="#7CD7DA" TextColor="#fff"
+                FontSize="36" CornerRadius="10" Clicked="OnSelectNumber" />
+        <Button Text="6" Grid.Row="3" Grid.Column="2"
+                BackgroundColor="#7CD7DA" TextColor="#fff"
+                FontSize="36" CornerRadius="10" Clicked="OnSelectNumber" />
+        <Button Text="(" Grid.Row="3" Grid.Column="3"
+                BackgroundColor="#2E5572" TextColor="#fff"
+                FontSize="36" CornerRadius="10" Clicked="OnSelectParenthesis" />
+        <Button Text=")" Grid.Row="3" Grid.Column="4"
+                BackgroundColor="#2E5572" TextColor="#fff"
+                FontSize="36" CornerRadius="10" Clicked="OnSelectParenthesis" />
+
+        <!-- Fila 4: 1, 2, 3, +, X -->
+        <Button Text="1" Grid.Row="4" Grid.Column="0"
+                BackgroundColor="#7CD7DA" TextColor="#fff"
+                FontSize="36" CornerRadius="10" Clicked="OnSelectNumber" />
+        <Button Text="2" Grid.Row="4" Grid.Column="1"
+                BackgroundColor="#7CD7DA" TextColor="#fff"
+                FontSize="36" CornerRadius="10" Clicked="OnSelectNumber" />
+        <Button Text="3" Grid.Row="4" Grid.Column="2"
+                BackgroundColor="#7CD7DA" TextColor="#fff"
+                FontSize="36" CornerRadius="10" Clicked="OnSelectNumber" />
+        <Button Text="+" Grid.Row="4" Grid.Column="3"
+                BackgroundColor="#2E5572" TextColor="#fff"
+                FontSize="36" CornerRadius="10" Clicked="OnSelectOperator" />
+        <Button Text="*" Grid.Row="4" Grid.Column="4"
+                BackgroundColor="#2E5572" TextColor="#fff"
+                FontSize="36" CornerRadius="10" Clicked="OnSelectOperator" />
+
+        <!-- Fila 5: 0, ., /, - -->
+        <Button Text="0" Grid.Row="5" Grid.Column="0"
+                BackgroundColor="#7CD7DA" TextColor="#fff"
+                FontSize="36" CornerRadius="10" Clicked="OnSelectNumber" />
+        <Button Text="." Grid.Row="5" Grid.Column="1"
+                BackgroundColor="#2E5572" TextColor="#fff"
+                FontSize="36" CornerRadius="10" Clicked="OnSelectDecimal" />
+        <Button Text="/" Grid.Row="5" Grid.Column="2"
+                BackgroundColor="#2E5572" TextColor="#fff"
+                FontSize="36" CornerRadius="10" Clicked="OnSelectOperator" />
+        <Button Text="-" Grid.Row="5" Grid.Column="3"
+                BackgroundColor="#2E5572" TextColor="#fff"
+                FontSize="36" CornerRadius="10" Clicked="OnSelectOperator" />
+        <Button Text="=" Grid.Row="5" Grid.Column="4"
+                BackgroundColor="#EA3547" TextColor="#fff"
+                FontSize="36" CornerRadius="10" Clicked="OnCalculate" />
+    </Grid>
+</ContentPage>
